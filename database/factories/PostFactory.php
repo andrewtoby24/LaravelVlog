@@ -19,7 +19,7 @@ class PostFactory extends Factory
         return [
             'title' => $this->faker->word,
             'image' => $this->faker->imageUrl,
-            'description' => $this->faker->text,
+            'description' => $this->faker->paragraph,
             'category_id' => rand(1,10),
             'user_id' => rand (1,5)
         ];
